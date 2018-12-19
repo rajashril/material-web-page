@@ -1,0 +1,164 @@
+@media #{$small-and-down} {
+	body {
+		background-size: 100% 10%;
+	}
+	.site-logo {
+		padding: $size-xxs;
+		text-align: center;
+	}
+	.navbar {
+		.navbar-nav {			
+			.nav-link {
+				padding: $size-xxs $size-xs;	
+				font-weight: normal;			
+			}	
+		}
+		.menu-bars {
+			content: "";
+			height: $size-xxxs;
+			border-bottom: ($size-xxxs * 2) solid $textLight; 
+			width: $size-xl;
+		}
+	}
+	.navbar-toggler {
+		position: absolute;
+		top: -($size-md * 2);
+	}
+	.top-links {
+		display: none;
+		li {
+			a {
+				padding: $size-xxs $size-xs;
+			}
+			display: block;
+		}
+	}
+	.home-second-section {
+		.search-form {
+			input {
+				width: 100%;
+			}
+		}
+	}
+	.exclusive-deals {
+		margin-bottom: $size-md;
+	}
+	.testimonial-container {
+		.slick-slider {						
+			.slick-prev {
+				left: 0;
+			}
+			.slick-next {
+				right: 0;			
+			}
+		}
+	}
+	/* Popular destination */
+	.popular-destination {
+		.small-img {
+			height: 115px;
+		}
+		.large-img {
+			height: 306px;
+		}
+	}	
+	.w-sm-100 {
+		width: 100%;
+	}
+	.top-links {
+		li {
+			a {
+				padding: $size-lg $size-xxs;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 601px) {
+	.top-links {
+		li {
+			a {
+				padding: $size-lg $size-xxs;
+			}
+			&:last-child {
+				&:after {
+					content: "";
+					width: $size-xxxs;
+					height: $size-md;
+					top: $size-lg + $size-xxxs;
+					left: -$size-xxs;
+					background-color: $footerborderColor;
+					position: absolute;
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) {		
+	/* header part */			
+	.site-logo {
+		padding: $size-sm $size-lg;
+	}
+	.top-links {
+		li {
+			a {
+				padding: $size-lg $size-md;
+			}			
+		}
+	}
+}
+@media #{$large-and-up} {	
+	.container {
+	    width: 90%;
+  	}
+	/* header part */				
+	.top-links {
+		li {
+			a {
+				padding: $size-lg;
+			}
+		}
+	}	
+	.home-first-section {
+		h1 {
+			font-size: $size-xl + $size-md;
+		}
+	}	
+	.mb-3 {
+ 	   margin-bottom: $size-md * 2;
+	}
+	.navbar-nav {
+    	a {
+			padding: 0 $size-md;
+		}
+	}
+}
+@media #{$extra-large-and-up} {			
+	/* header part */			
+	.top-links {
+		li {
+			a {
+				padding: $size-lg $size-xl;;
+			}
+		}
+	}
+	.home-first-section {
+		h1 {
+			font-size: $size-xl * 3 + $size-md;
+		}
+	}	
+	.padding-m-0 {
+		padding: 0 !important;
+	}
+	.airline-services { 
+		display: flex;
+    	justify-content: space-evenly;
+	}
+	.testimonial-container {
+		padding: $size-xs 0 ($size-xs * 9);
+	}
+	.navbar-nav {
+    	a {
+			padding: 0 $size-xl;
+		}
+	}
+}

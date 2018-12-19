@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Material, SASS, FLEXBOX</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<link rel="stylesheet" href="../node_modules/material-icons/iconfont/material-icons.css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<section class="site-header" id="sticky-top">
+				<div class="container">
+					<div class="row">
+						<div class="col l2  s12">
+							<a href="/" title="Home" class="site-logo d-block">LOGO</a>
+						</div>
+						<div class="col l7 s12">					
+							<nav class="navbar">
+								<div class="nav-wrapper hide-on-small-and-down" id="nav-content">   
+									<ul class="navbar-nav">
+										<li class="active">
+											<a href="#" title="HOTEL">HOTEL</a>
+										</li>
+										<li>
+											<a href="#" title="HOLIDAY">HOLIDAY</a>
+										</li>
+										<li>
+											<a href="#" title="FLIGHTS">FLIGHTS</a>
+										</li>
+										<li>
+											<a href="#" title="CRUISE">CRUISE</a>
+										</li>
+										<li>
+											<a href="#" title="EXTRAS">EXTRAS</a>
+										</li>
+										<li>
+											<a href="#" title="CITY BREAKS">CITY BREAKS</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<a href="#" data-target="nav-mobile" class="top-nav sidenav-trigger full hide-on-med-and-up"><i class="material-icons">menu</i></a>
+							<ul id="nav-mobile" class="sidenav sidenav-fixed hide-on-med-and-up" style="transform: translateX(-105%);">								
+								<li class="active">
+									<a href="#" title="HOTEL">HOTEL</a>
+								</li>
+								<li>
+									<a href="#" title="HOLIDAY">HOLIDAY</a>
+								</li>
+								<li>
+									<a href="#" title="FLIGHTS">FLIGHTS</a>
+								</li>
+								<li>
+									<a href="#" title="CRUISE">CRUISE</a>
+								</li>
+								<li>
+									<a href="#" title="EXTRAS">EXTRAS</a>
+								</li>
+								<li>
+									<a href="#" title="CITY BREAKS">CITY BREAKS</a>
+								</li>
+								<li>
+									<a href="#" title="My Account">MY ACCOUNT</a>
+								</li>
+								<li>
+									<a href="#" title="Support">SUPPORT</a>
+								</li>															
+							</ul>
+						</div>
+						<div class="col l3 s12">
+							<ul class="top-links ">
+								<li class="">
+									<a href="#" title="My Account" class="d-block">My Account</a>
+								</li>
+								<li class="">
+									<a href="#" title="Support" class="d-block">Support</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col m9 center-mode float-none">
+							<div class="home-first-section">
+								<div class="sub-text center">
+									Lorem Ipsum is simply dummy text. Lorem Ipsum has been the industry's standard dummy text
+								</div>
+								<h1 class="center">
+									<em>A world of wonders</em>
+								</h1>
+							</div>
+							<div class="home-second-section">
+								<div class="hotel-search-section">
+									<ul class="collapsible">
+										<li>
+											<input type="text" class="search-Placeholder collapsible-header" id="inputSearch" placeholder="Paris">
+											<div class="collapsible-body">
+												<div class="search-form" id="search-form">
+													<form class="row">
+														<div class="col m3 s12 padding-m-0">
+															<input type="text" class="form-control search-input-Placeholder calender" id="startDate" placeholder="Start date">
+															<i class="icon-calendar calender-1"></i>
+														</div>
+														<div class="col m3 s12 padding-m-0">
+															<input type="text" class="form-control search-input-Placeholder calender" id="endDate" placeholder="End date">
+															<i class="icon-calendar calender-2"></i>
+														</div>
+														<div class="col m3 s12">
+															<input type="text" class="form-control search-input-Placeholder" id="bokkingType" placeholder="1 Rooms, 2 Guests">
+														</div>
+														<div class="col m3 s12">
+															<button type="submit" class="btn bg-pink">SEARCH</button>
+														</div>
+													</form>
+													<div class="weather">Weather maybe <i class="icon-cloud"></i> <strong>PARTLY CLOUDY</strong> on your visiting dates</div>
+												</div>
+											</div>
+										</li>										
+									</ul>															
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>	
+		<section class="py-4">
+			<div class="container">
+				<h2 class="section-title center">Exclusive Deals</h2>
+				<div class="row">
+					<div class="col m4">
+						<div class="exclusive-deals">
+							<div class="card horizontal">
+								<div class="card-image">
+									<img src="images/deal1.jpg" alt="deal1" class="img-fluid">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+										<div class="exclusive-deals-title">Get a great deals on flights when you book with us</div>
+										<div class="exclusive-deals-discount">Upto 30% discount on internatioanl flights</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="exclusive-deals">
+							<div class="card horizontal">
+								<div class="card-image">
+									<img src="images/deal2.jpg" alt="deal2" class="img-fluid">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+										<div class="exclusive-deals-title">Get a great deals on flights when you book with us</div>
+										<div class="exclusive-deals-discount">Upto 30% discount on internatioanl flights</div>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="exclusive-deals">
+							<div class="card horizontal">
+								<div class="card-image">
+									<img src="images/deal3.jpg" alt="deal3" class="img-fluid">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+										<div class="exclusive-deals-title">Get a great deals on flights when you book with us</div>
+										<div class="exclusive-deals-discount">Upto 30% discount on internatioanl flights</div>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="row center">
+					<a href="#" title="" class="brand-btn waves-effect waves-light btn">ALL DEALS</a>
+				</div>			
+			</div>
+		</section>
+		<section>
+			<div class="container-fluid">
+				<h2 class="section-title center">Our Popular Destinations</h2>	
+				<div class="popular-destination">
+					<div class="popular-destination-slides">
+						<div class="row">
+							<div class="col s6">
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest1.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest3.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>	
+							</div>	
+							<div class="col s6">							
+								<div class="shadow-box">
+									<div class="shadow-box-img large-img" style="background-image:url('images/destinations/dest2.jpg');"></div>
+									<div class="content">
+										<div>
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+					<div class="popular-destination-slides">
+						<div class="row">
+							<div class="col s12">
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest4.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="font-weight-bold dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="row">
+									<div class="col s6">
+										<div class="shadow-box">
+											<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest5.jpg');"></div>
+											<div class="content">
+												<div class="small-img-box">
+													<div class="brand-color">San Mercadal</div>
+													<div class="gray-color">Madrid</div>
+												</div>
+												 <div class="center-align">
+													<div class="dark-color">3D/2N from</div>
+													<div class="dark-color">£258.99</div>
+												</div> 
+											</div>
+										</div>
+									</div>	
+									<div class="col s6">
+										<div class="shadow-box">
+											<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest6.jpg');"></div>
+											<div class="content">
+												<div class="small-img-box">
+													<div class="brand-color">San Mercadal</div>
+													<div class="gray-color">Madrid</div>
+												</div>
+												 <div class="center-align">
+													<div class="dark-color">3D/2N from</div>
+													<div class="dark-color">£258.99</div>
+												</div> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>						
+					<div class="popular-destination-slides">
+						<div class="row">
+							<div class="col s6">
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest1.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest3.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>	
+							</div>	
+							<div class="col s6">							
+								<div class="shadow-box">
+									<div class="shadow-box-img large-img" style="background-image:url('images/destinations/dest2.jpg');"></div>
+									<div class="content">
+										<div>
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</div>
+					<div class="popular-destination-slides">
+						<div class="row">
+							<div class="col s12">
+								<div class="shadow-box">
+									<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest4.jpg');"></div>
+									<div class="content">
+										<div class="small-img-box">
+											<div class="brand-color">San Mercadal</div>
+											<div class="gray-color">Madrid</div>
+										</div>
+										 <div class="center-align">
+											<div class="dark-color">3D/2N from</div>
+											<div class="dark-color">£258.99</div>
+										</div> 
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="row">
+									<div class="col s6">
+										<div class="shadow-box">
+											<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest5.jpg');"></div>
+											<div class="content">
+												<div class="small-img-box">
+													<div class="brand-color">San Mercadal</div>
+													<div class="gray-color">Madrid</div>
+												</div>
+												 <div class="center-align">
+													<div class="dark-color">3D/2N from</div>
+													<div class="dark-color">£258.99</div>
+												</div> 
+											</div>
+										</div>
+									</div>	
+									<div class="col s6">
+										<div class="shadow-box">
+											<div class="shadow-box-img small-img" style="background-image:url('images/destinations/dest6.jpg');"></div>
+											<div class="content">
+												<div class="small-img-box">
+													<div class="brand-color">San Mercadal</div>
+													<div class="gray-color">Madrid</div>
+												</div>
+												 <div class="center-align">
+													<div class="dark-color">3D/2N from</div>
+													<div class="dark-color">£258.99</div>
+												</div> 
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>										
+				</div>		
+			</div>
+		</section>
+		<section class="testimonial-container">
+			<div class="container">
+				<h2 class="section-title center">Testimonials</h2>
+				<div class="row">
+					<div class="col m9 center-mode float-none">
+						<ul id="testimonial-slider" class="center">
+							<li>
+								<em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</em>
+								<div class="">- John Smith</div>
+							</li>
+							<li>
+								<em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</em>
+								<div class="">- John Smith</div>
+							</li>
+							<li>
+								<em>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic.</em>
+								<div class="">- John Smith</div>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<h2 class="section-title center">Airline Services</h2>
+				<div class="row airline-services">
+					<div class="center-align">
+						<img src="images/airlines/airline1.png" alt="airline1" class="img-fluid">							
+					</div>
+					<div class="center-align">					
+						<img src="images/airlines/airline2.png" alt="airline2" class="img-fluid">							
+					</div>
+					<div class="center-align">					
+						<img src="images/airlines/airline3.png" alt="airline3" class="img-fluid">							
+					</div>
+					<div class="center-align">					
+						<img src="images/airlines/airline4.png" alt="airline4" class="img-fluid">							
+					</div>
+					<div class="center-align">					
+						<img src="images/airlines/airline5.png" alt="airline5" class="img-fluid">							
+					</div>
+				</div>						
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l3 m6 s12 mb-3">
+						<h3 class="sub-section-title">Newsletter</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<form class="newsletter">
+							<input type="text" class="rounded" id="newsletterSubscription" placeholder="Subscribes...">						
+							<button type="submit" class="brand-btn green-border waves-effect waves-light btn">Go</button>
+						</form>
+					</div>
+					<div class="col l3 m6 s12 mb-3">
+						<h3 class="sub-section-title">Latest News</h3>
+						<div class="footer-news">
+							<div class="card horizontal z-depth-0">
+								<div class="card-image">
+									<img src="images/media/media1.png" alt="media1" class="img-fluid img-wt-border">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+										Lorem Ipsum is simply dummy text of the printing
+										<div class="news-date">August 12, 2012 - 9.11 pm</div>
+									</div>
+								</div>
+							</div>
+							<div class="card horizontal z-depth-0">
+								<div class="card-image">
+									<img src="images/media/media2.png" alt="media2" class="img-fluid img-wt-border">
+								</div>
+								<div class="card-stacked">
+									<div class="card-content">
+										Lorem Ipsum is simply dummy text of the printing
+										<div class="news-date">August 12, 2012 - 9.11 pm</div>
+									</div>
+								</div>
+							</div>	
+						</div>	
+					</div>
+					<div class="col l3 m6 s12 mb-3">
+						<h3 class="sub-section-title">Tags</h3>
+						<a href="" title="Agent Login" class="new badge badge-gray">Agent Login</a>
+						<a href="" title="Customer Login" class="new badge badge-gray">Customer Login</a>
+						<a href="" title="Not a Member?" class="new badge badge-gray">Not a Member?</a>
+						<a href="" title="Contact" class="new badge badge-gray">Contact</a>
+						<a href="" title="New Horizons" class="new badge badge-gray">New Horizons</a>
+						<a href="" title="Landscape" class="new badge badge-gray">Landscape</a>
+						<a href="" title="Tags" class="new badge badge-gray">Tags</a>
+						<a href="" title="Nice" class="new badge badge-gray">Nice</a>
+						<a href="" title="Some" class="new badge badge-gray">Some</a>
+						<a href="" title="Portrait" class="new badge badge-gray">Portrait</a>
+					</div>
+					<div class="col l3 m6 s12 mb-3">
+						<h3 class="sub-section-title">Address</h3>
+						<address>
+							DieSachbearbeiter Schonhauser Allee 167c,<br/> 10435 Berlin Germany
+						</address>
+						<a href="mailto:support@domain.com" class="brand-color footer-email-link" title="support@domain.com">support@domain.com</a>
+						<ul class="social-media">
+							<li>
+								<a href="" title="facebook">
+									<i class="icon-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="twitter">
+									<i class="icon-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="tumblr">
+									<i class="icon-tumblr"></i>
+								</a>
+							</li>
+							<li>
+								<a href="" title="pinterest">
+									<i class="icon-pinterest"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid center copyright">
+				Copyright @websitename. All Rights Reserved.
+			</div>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="../node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+	<script src="js/custom.js"></script>
+	</body>
+</html>
